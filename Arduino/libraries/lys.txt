@@ -1,0 +1,26 @@
+void lys(int a,int b, int c){
+  //int a ,b ,c 는 핀번호
+  
+for(int i = 0; i < 10;  i++){
+  int on = rand()%2;
+  digitalWrite(a, on);
+  delay(100);                  
+  digitalWrite(a, on);   
+  delay(100);          
+  //합쳐서 2초
+  on = rand()%2;
+  digitalWrite(b, on);
+  delay(100);                  
+  digitalWrite(b, on);   
+  delay(100);          
+  //합쳐서 2초
+  on = rand()%2;
+  digitalWrite(c, on);
+  delay(100);                  
+  digitalWrite(c, on);   
+  delay(100);                      
+  //합쳐서 2초
+  //총 6초
+ }
+
+}
